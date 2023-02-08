@@ -1,13 +1,14 @@
 <div>
   <h1>Holi</h1>
-  <img
+  {{!-- <img
     height='300px'
     src='{{getRandomBeer.image_url}}'
     alt='{{getRandomBeer.name}}'
   />
   <h3>{{getRandomBeer.name}}</h3>
   <p>{{getRandomBeer.description}}</p>
-  <p><span>{{getRandomBeer.tagline}}</span></p>
+  <p><span>{{getRandomBeer.tagline}}</span></p> --}}
+  {{>beerpartial getRandomBeer}}
 
   <ul>
     {{#each getRandomBeer.food_pairing}}

@@ -2,10 +2,11 @@
     {{#each getAllBeers}}
 
     <div>
-        <img height="300px" src="{{image_url}}" alt="{{name}}">
+        {{!-- <img height="300px" src="{{image_url}}" alt="{{name}}">
         <h3>{{name}}</h3>
         <p>{{description}}</p>
-        <p><span>{{tagline}}</span></p>
+        <p><span>{{tagline}}</span></p> --}}
+        {{>beerpartial this}}
     </div>
 
     {{/each}}
