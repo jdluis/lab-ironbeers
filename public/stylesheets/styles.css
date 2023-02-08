@@ -82,7 +82,7 @@ a {
   justify-content: center;
 }
 
-.text-container {
+#beer-item .text-container {
   height: 250px;
 }
 
@@ -100,7 +100,7 @@ a {
   color: #00000060;
 }
 
-.img-container {
+#beer-item .img-container {
   height: 250px;
   text-align: center;
 }
@@ -111,7 +111,31 @@ a {
   object-fit: contain;
 }
 
+/* one Beer page */
+.container-father-one-beer{
+    display: grid;
+    grid-template-columns: 100px 300px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "imagen textup"
+    "imagen textdown"
+    ;
+}
+.one-beer-container{
+    display: inline;
+}
 
+.one-beer-container .img-container {
+    grid-area: imagen;
+    
+}
+.one-beer-container .text-container {
+   grid-area: textup;
+}
+
+.extra-text{
+    grid-area: textdown;
+}
 /* Footer */
 
 #footer {
