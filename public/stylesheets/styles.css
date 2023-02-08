@@ -110,3 +110,19 @@ a {
   height: 100%;
   object-fit: contain;
 }
+
+
+/* Footer */
+
+#footer {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer p {
+    color: var(--color-white);
+    padding: 8px 15px;
+}
