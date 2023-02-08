@@ -1,72 +1,112 @@
 /* Globales */
 
 :root {
-    --color-white: #f7f9f9;
-    --color-light-blue: #2081c3;
-    --color-dark-blue: #0a2c42;
-    --color-grey: #bfbfbf;
-    --font-family: Arial, Helvetica, sans-serif;
+  --color-white: #f7f9f9;
+  --color-light-blue: #2081c3;
+  --color-dark-blue: #0a2c42;
+  --color-grey: #d1d1d1;
+  --font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-family);
-    background-color: var(--color-grey);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  background-color: var(--color-grey);
 }
 
 a {
-    text-decoration: none;
-    color: var(--color-white);
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 /* nav-bar */
 
 #nav-bar {
-    background-color: var(--color-light-blue);
-    display: flex;
-    gap: 30px;
-    min-height: 50px;
-    align-items: center;
-    padding-left: 40px;
-    box-shadow: 0 0 8px 0 #000000;
+  background-color: var(--color-light-blue);
+  display: flex;
+  gap: 30px;
+  min-height: 50px;
+  align-items: center;
+  padding-left: 40px;
+  box-shadow: 0 0 8px 0 #000000;
 }
-
 
 /* body */
-#index-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#index-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#index-img-div{
-    max-width: 350px;
-    padding: 60px 0;
+#index-img-div {
+  max-width: 350px;
+  padding: 60px 0;
 }
 
 #index-img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
-#links-container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.index-btn {
+  padding: 10px 15px;
+  background-color: var(--color-light-blue);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #000000;
+  margin-bottom: 20px;
 }
-/* #links-container a */
-.index-btn{
-    
-    padding: 10px 15px;
-    background-color: var(--color-light-blue);
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 0 5px 0 #000000;
-    margin-bottom: 20px;
+
+/*Galery*/
+
+#beers-galery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+#beer-item {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container {
+  height: 250px;
+}
+
+#beer-item h3 {
+  color: #000;
+  font-weight: 800;
+}
+
+#beer-item p {
+  font-size: 0.9rem;
+}
+
+#beer-item span {
+  font-size: 0.9rem;
+  color: #00000060;
+}
+
+.img-container {
+  height: 250px;
+  text-align: center;
+}
+
+#beer-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

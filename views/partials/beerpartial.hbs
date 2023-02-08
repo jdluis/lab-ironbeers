@@ -1,4 +1,8 @@
-<img height="300px" src="{{this.image_url}}" alt="{{this.name}}">
-<a href="/beers/{{this.id}}"><h3>{{this.name}}</h3></a>
-<p>{{this.description}}</p>
-<p><span>{{this.tagline}}</span></p>
+<div class='img-container'>
+  <img height='300px' src='{{this.image_url}}' alt='{{this.name}}' />
+</div>
+<div class="text-container">
+  <a href='/beers/{{this.id}}'><h3>{{this.name}}</h3></a>
+  <p><span>{{this.tagline}}</span></p>
+  <p>{{this.description}}</p>
+</div>

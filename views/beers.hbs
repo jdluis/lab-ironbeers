@@ -1,11 +1,7 @@
-<div>
+<div id="beers-galery">
     {{#each getAllBeers}}
 
-    <div>
-        {{!-- <img height="300px" src="{{image_url}}" alt="{{name}}">
-        <h3>{{name}}</h3>
-        <p>{{description}}</p>
-        <p><span>{{tagline}}</span></p> --}}
+    <div id="beer-item">
         {{>beerpartial this}}
     </div>
 
